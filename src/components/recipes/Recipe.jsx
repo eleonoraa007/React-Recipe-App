@@ -5,14 +5,10 @@ const ContainerStyle = styled.div`
   padding: 1rem;
 `;
 
-const TitleStyle = styled.h3`
-  padding: 0rem 1rem 1rem;
-`;
-
 function Recipe({ recipe }) {
   return (
     <ContainerStyle>
-      <TitleStyle>{recipe.title}</TitleStyle>
+      <h3>{recipe.title}</h3>
 
       <img src={recipe.image} alt={recipe.title} />
     </ContainerStyle>

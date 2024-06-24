@@ -10,14 +10,15 @@ export function useRecipes() {
         // const response = await fetch(
         //   "https://api.spoonacular.com/recipes/complexSearch?apiKey=23e85afe8d724fb781cb6d7e2f2ebcda"
         // );
-        const response = await fetch("http://localhost:8000/results", {
+        const response = await fetch("http://localhost:8000/results/", {
           headers: {
             "Content-Type": "application/json",
           },
         });
         if (!response.ok) throw new Error("Response is not ok");
         const data = await response.json();
-        setRecipes(data.results);
+        console.log(data);
+        setRecipes(data);
       } catch (err) {
         setError(err.message || "An unknown error occurred.");
       }

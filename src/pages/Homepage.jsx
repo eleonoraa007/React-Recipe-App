@@ -1,13 +1,14 @@
+import { useState } from "react";
 import NavBar from "../components/NavBar";
-import RecipeDetail from "../components/RecipeDetail";
 import RecipeList from "../components/recipes/RecipeList";
+import Result from "../components/search/Result";
 
 function Homepage() {
+  const [results, setResults] = useState([]);
   return (
     <>
-      <NavBar />
-      <RecipeList />
-      <RecipeDetail />
+      <NavBar setResults={setResults} />
+      {results.length ? <Result results={results} /> : <RecipeList />}
     </>
   );
 }

@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import Search from "./search/Search";
 
 const NavBarStyle = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -12,10 +12,11 @@ const NavBarStyle = styled.div`
   color: #fff;
 `;
 
-function NavBar() {
+function NavBar({ setResults }) {
   return (
     <NavBarStyle>
-      <h1>Recipes</h1>
+      <p>Menu</p>
+      <Search setResults={setResults} />
     </NavBarStyle>
   );
 }
