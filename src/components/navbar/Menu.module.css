@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0rem;
+    padding: 2rem 0rem;
+    background-color: rgb(166, 166, 191);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0.4rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+    padding: 0.2rem 2rem 0.2rem 1rem;
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+.menu a:hover {
+    background-color: rgb(128, 128, 164);
+}

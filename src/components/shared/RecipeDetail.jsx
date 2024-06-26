@@ -1,4 +1,4 @@
-import { useRecipeInfo } from "../hooks/useRecipeInfo";
+import { useRecipeInfo } from "../../hooks/useRecipeInfo";
 import styles from "./RecipeDetail.module.css";
 
 function RecipeDetail({ recipeId }) {
@@ -16,8 +16,8 @@ function RecipeDetail({ recipeId }) {
             <p>PREP {recipeInfo?.readyInMinutes} MIN</p>
             <p>${recipeInfo?.pricePerServing} RECIPE</p>
           </div>
-          <div className={styles?.top}>
-            <div className={styles?.ingredient}>
+          <div className={styles.top}>
+            <div className={styles.ingredient}>
               <h3>Ingredients</h3>
               <ul>
                 {recipeInfo.extendedIngredients ? (
@@ -37,7 +37,7 @@ function RecipeDetail({ recipeId }) {
             </div>
           </div>
           <div className="preparation-details">
-            <div className={styles?.instruction}>
+            <div className={styles.instruction}>
               {recipeInfo.analyzedInstructions ? (
                 recipeInfo.analyzedInstructions.map((instruction, index) => (
                   <div key={index}>

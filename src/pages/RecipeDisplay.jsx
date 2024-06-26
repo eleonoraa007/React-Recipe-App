@@ -1,5 +1,5 @@
-import RecipeDetail from "../components/RecipeDetail";
-import NavBar from "../components/NavBar";
+import RecipeDetail from "../components/shared/RecipeDetail";
+import NavBar from "../components/navbar/NavBar";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import Result from "../components/search/Result";
@@ -10,7 +10,6 @@ function RecipeDisplay() {
   return (
     <>
       <NavBar setResults={setResults} />
-      {/* <RecipeDetail recipeId={id} /> */}
       {results.length ? (
         <Result results={results} />
       ) : (

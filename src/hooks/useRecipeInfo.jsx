@@ -13,14 +13,6 @@ export const useRecipeInfo = (recipeId) => {
         const response = await fetch(
           `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=23e85afe8d724fb781cb6d7e2f2ebcda`
         );
-        // const response = await fetch(
-        //   "http://localhost:8000/results/?id={recipeId}",
-        //   {
-        //     headers: {
-        //       "Content-Type": "application/json",
-        //     },
-        //   }
-        // );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-export function useRecipes() {
+export function useLowCalorieRecipe() {
   const [recipes, setRecipes] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch("http://localhost:8000/results/", {
+        const response = await fetch("http://localhost:8000/calories/", {
           headers: {
             "Content-Type": "application/json",
           },

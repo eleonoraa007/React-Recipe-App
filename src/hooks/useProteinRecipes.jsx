@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-export function useRecipes() {
+export const useProteinRecipe = () => {
   const [recipes, setRecipes] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch("http://localhost:8000/results/", {
+        const response = await fetch("http://localhost:8000/proteins/", {
           headers: {
             "Content-Type": "application/json",
           },
@@ -24,4 +24,4 @@ export function useRecipes() {
   }, []);
 
   return { recipes, error };
-}
+};

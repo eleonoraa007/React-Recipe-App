@@ -1,23 +1,17 @@
-import styled from "styled-components";
 import { useRecipes } from "../../hooks/useRecipes";
 import Recipe from "./Recipe";
 
-const ListStyle = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 1rem;
-`;
-
-function RecipeList() {
+function RecipeList({ onSelect }) {
   const { recipes } = useRecipes();
 
   return (
-    <ListStyle>
+    <ul className="styled-list">
       {recipes?.map((recipe) => (
-        <Recipe recipe={recipe} key={recipe.id} />
+        <li key={recipe.id} onClick={() => onSelect(recipe.id)}>
+          <Recipe recipe={recipe} />
+        </li>
       ))}
-    </ListStyle>
+    </ul>
   );
 }
 export default RecipeList;

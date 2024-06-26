@@ -1,25 +1,17 @@
 import React from "react";
 import Recipe from "../recipes/Recipe";
-import styled from "styled-components";
 
-const Style = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 1rem;
-`;
-
-function Result({ results }) {
+function Result({ results, onSelect }) {
   return (
-    <div>
+    <ul className="styled-list">
       {results
         ? results.map((recipe) => (
-            <Style key={recipe.id}>
+            <li key={recipe.id} onClick={() => onSelect(recipe.id)}>
               <Recipe recipe={recipe} />
-            </Style>
+            </li>
           ))
         : "Loading..."}
-    </div>
+    </ul>
   );
 }
 

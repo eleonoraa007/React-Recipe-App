@@ -1,0 +1,12 @@
+.search {
+    margin-top: 13px;
+    margin-right: 20px;
+    height: 5.5vh;
+    width: 20vh;
+    text-align: start;
+    padding-left: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: #808080;
+    background-color: #fff;
+}

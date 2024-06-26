@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    height: 10vh;
+    background-color: #9292ad;
+    color: #fff;
+}
+
+.icon {
+    background-color: rgb(115, 115, 168);
+    border: none;
+    height: 6vh;
+    margin: 1rem 0.7rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.icon:hover {
+    background-color: rgb(100, 100, 152);
+}
