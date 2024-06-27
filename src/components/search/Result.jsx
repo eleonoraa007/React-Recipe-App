@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Recipe from "../recipes/Recipe";
+import { PropContext } from "../../context/PropContext";
 
-function Result({ results, onSelect }) {
+function Result() {
+  const { results, onSelect } = useContext(PropContext);
   return (
     <ul className="styled-list">
       {results

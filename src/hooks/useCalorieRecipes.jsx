@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useLowCalorieRecipe() {
+export function useCalorieRecipes() {
   const [recipes, setRecipes] = useState([]);
   const [error, setError] = useState(null);
 

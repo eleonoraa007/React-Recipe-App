@@ -11,11 +11,6 @@ function Menu() {
           </Link>
         </li>
         <li>
-          <Link to="/recipe/633858">
-            <span>RecipeId</span>
-          </Link>
-        </li>
-        <li>
           <Link to="calorie">
             <span>Low Calorie Recipes</span>
           </Link>

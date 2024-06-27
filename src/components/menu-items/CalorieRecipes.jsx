@@ -1,8 +1,8 @@
-import { useLowCalorieRecipe } from "../../hooks/useLowCalorieRecipe";
+import { useCalorieRecipes } from "../../hooks/useCalorieRecipes";
 import Recipe from "../recipes/Recipe";
 
-function LowCalorieRecipe() {
-  const { recipes } = useLowCalorieRecipe();
+function CalorieRecipes() {
+  const { recipes } = useCalorieRecipes();
   return (
     <ul className="styled-list">
       {recipes
@@ -16,4 +16,4 @@ function LowCalorieRecipe() {
   );
 }
 
-export default LowCalorieRecipe;
+export default CalorieRecipes;

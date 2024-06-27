@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import { useRecipes } from "../../hooks/useRecipes";
 import Recipe from "./Recipe";
+import { PropContext } from "../../context/PropContext";
 
-function RecipeList({ onSelect }) {
+function RecipeList() {
+  const { onSelect } = useContext(PropContext);
   const { recipes } = useRecipes();
 
   return (
