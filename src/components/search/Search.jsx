@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styles from "./Search.module.css";
+import { PropContext } from "../../context/PropContext";
 
-function Search({ setResults }) {
+function Search() {
+  const { setResults } = useContext(PropContext);
   const [input, setInput] = useState("");
 
   const fetchData = (query) => {

@@ -5,12 +5,13 @@
     font-weight: 900;
     font-style: normal;
     height: 10vh;
-    background-color: #9292ad;
+    background-color: rgb(40, 40, 40);
     color: #fff;
 }
 
 .icon {
-    background-color: rgb(115, 115, 168);
+    background-color: rgb(40, 40, 40);
+    color: white;
     border: none;
     height: 6vh;
     margin: 1rem 0.7rem;
@@ -19,5 +20,5 @@
     font-size: 20px;
 }
 .icon:hover {
-    background-color: rgb(100, 100, 152);
+    background-color: rgb(40, 40, 40);
 }

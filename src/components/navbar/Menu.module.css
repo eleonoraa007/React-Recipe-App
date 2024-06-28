@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 4rem;
+    top: 4.4rem;
     left: 0rem;
     padding: 2rem 0rem;
-    background-color: rgb(166, 166, 191);
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     z-index: 1;
 }
 
@@ -17,6 +17,7 @@
 
 .menu li {
     padding: 0.4rem;
+    border-bottom: 1px solid rgb(212, 208, 208);
 }
 
 .menu a {
@@ -27,5 +28,5 @@
     font-size: 1.25rem;
 }
 .menu a:hover {
-    background-color: rgb(128, 128, 164);
+    background-color: white;
 }
