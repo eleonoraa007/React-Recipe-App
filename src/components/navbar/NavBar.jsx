@@ -3,6 +3,7 @@ import Search from "../search/Search";
 import Menu from "./Menu";
 import styles from "./NavBar.module.css";
 import { FaBars } from "react-icons/fa";
+import { RiCloseLargeLine } from "react-icons/ri";
 
 function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -37,7 +38,7 @@ function NavBar() {
         ref={buttonRef}
         onClick={handleToggleMenu}
       >
-        <FaBars />
+        {!toggleMenu ? <FaBars /> : <RiCloseLargeLine />}
       </button>
       {toggleMenu && (
         <div ref={menuRef}>

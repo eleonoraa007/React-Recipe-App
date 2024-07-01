@@ -8,9 +8,12 @@ const PropProvider = ({ children }) => {
   const navigate = useNavigate();
   const { recipes } = useRecipes();
   const [results, setResults] = useState([]);
+  const [input, setInput] = useState("");
 
   const handleSelectRecipe = (id) => {
     navigate(`/recipe/${id}`);
+    setInput("");
+    setResults([]);
   };
 
   return (
@@ -20,6 +23,8 @@ const PropProvider = ({ children }) => {
         onSelect: handleSelectRecipe,
         results,
         setResults,
+        input,
+        setInput,
       }}
     >
       {children}

@@ -7,8 +7,9 @@ import { PropContext } from "../context/PropContext";
 function RecipeDisplay() {
   const { id } = useParams();
   const { results } = useContext(PropContext);
-  // return <>{ ? <Result /> : <RecipeDetail recipeId={id} />}</>;
-  return <RecipeDetail recipeId={id} />;
+  return (
+    <>{results.length > 0 ? <Result /> : <RecipeDetail recipeId={id} />}</>
+  );
 }
 
 export default RecipeDisplay;

@@ -4,11 +4,12 @@
     position: absolute;
     top: 4.4rem;
     left: 0rem;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 2rem;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    z-index: 1;
+    /* z-index: 1; */
+    width: 100%;
 }
 
 .menu ul {
@@ -16,8 +17,8 @@
 }
 
 .menu li {
-    padding: 0.4rem;
-    border-bottom: 1px solid rgb(212, 208, 208);
+    padding: 0.7rem;
+    border-bottom: 1px solid rgb(236, 233, 233);
 }
 
 .menu a {
