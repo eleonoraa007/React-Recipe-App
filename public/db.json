@@ -7,6 +7,24 @@
             "imageType": "jpg"
         },
         {
+            "id": 982371,
+            "title": "Instant Pot Quinoa Grain Bowl",
+            "image": "https://img.spoonacular.com/recipes/982371-312x231.jpg",
+            "imageType": "jpg"
+        },
+        {
+            "id": 641057,
+            "title": "Curried Butternut Squash and Apple Soup",
+            "image": "https://img.spoonacular.com/recipes/641057-312x231.jpg",
+            "imageType": "jpg"
+        },
+        {
+            "id": 632269,
+            "title": "Amaranth and Roast Veggie Salad",
+            "image": "https://img.spoonacular.com/recipes/632269-312x231.jpg",
+            "imageType": "jpg"
+        },
+        {
             "id": 716406,
             "title": "Asparagus and Pea Soup: Real Convenience Food",
             "image": "https://img.spoonacular.com/recipes/716406-312x231.jpg",
@@ -19,21 +37,15 @@
             "imageType": "jpg"
         },
         {
-            "id": 782601,
-            "title": "Red Kidney Bean Jambalaya",
-            "image": "https://img.spoonacular.com/recipes/782601-312x231.jpg",
+            "id": 664547,
+            "title": "Vegetable Dip",
+            "image": "https://img.spoonacular.com/recipes/664547-312x231.jpg",
             "imageType": "jpg"
         },
         {
             "id": 716426,
             "title": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
             "image": "https://img.spoonacular.com/recipes/716426-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 716004,
-            "title": "Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries",
-            "image": "https://img.spoonacular.com/recipes/716004-312x231.jpg",
             "imageType": "jpg"
         },
         {
@@ -67,9 +79,15 @@
             "imageType": "jpg"
         },
         {
-            "id": 663559,
-            "title": "Tomato and lentil soup",
-            "image": "https://img.spoonacular.com/recipes/663559-312x231.jpg",
+            "id": 661340,
+            "title": "Spinach Salad with Strawberry Vinaigrette",
+            "image": "https://img.spoonacular.com/recipes/661340-312x231.jpg",
+            "imageType": "jpg"
+        },
+        {
+            "id": 659135,
+            "title": "Salmon with roasted vegetables",
+            "image": "https://img.spoonacular.com/recipes/659135-312x231.jpg",
             "imageType": "jpg"
         }
     ],

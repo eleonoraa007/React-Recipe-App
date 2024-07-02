@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 const ContainerStyle = styled.div`
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+  width: 315px;
   padding: 1rem;
 `;
 

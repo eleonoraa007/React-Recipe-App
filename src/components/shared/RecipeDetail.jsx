@@ -32,11 +32,9 @@ function RecipeDetail({ recipeId }) {
                 )}
               </ul>
             </div>
-            <div>
-              <img src={recipeInfo.image} alt={recipeInfo.title} />
-            </div>
-          </div>
-          <div className="preparation-details">
+
+            <img src={recipeInfo.image} alt={recipeInfo.title} />
+
             <div className={styles.instruction}>
               {recipeInfo.analyzedInstructions ? (
                 recipeInfo.analyzedInstructions.map((instruction, index) => (
