@@ -95,7 +95,7 @@
     }
     .top {
         margin: 1rem 2rem;
-        gap: 1rem;
+        gap: 2rem;
     }
     .top img {
         width: 450px;
@@ -117,7 +117,7 @@
     }
     .top {
         margin: 1rem 2rem;
-        gap: 1rem;
+        gap: 4rem;
     }
     .top img {
         width: 450px;
@@ -125,7 +125,7 @@
         margin-right: 0rem;
     }
     .ingredient {
-        margin-left: 3rem;
+        margin-left: 4rem;
         padding: 2rem 3rem;
         font-size: 17px;
     }
@@ -142,11 +142,28 @@
     .ingredient {
         height: 100%;
     }
+    .top {
+        margin: 1rem 2rem;
+        gap: 3rem;
+    }
+    .top img {
+        width: 450px;
+        height: 100%;
+    }
+}
+@media(min-width: 1468px) {
+    .ingredient {
+        height: 100%;
+    }
+    .top {
+        margin: 1rem 2rem;
+        gap: 3rem;
+    }
     .top img {
         width: 450px;
         height: 100%;
     }
     .instruction {
-        width: 35rem;
+        width: 28rem;
     }
 }
